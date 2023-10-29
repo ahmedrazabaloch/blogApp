@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Blog App by Ar</title>
-</head>
-<body>
-    <div class="cotainer"></div>
-    
+  </head>
+  <body>
+    <div class="cotainer">
+      <!-- navBar -->
+      <nav class="navContainer">
+        <div>
+          <img src="img/blogger_B.png" />
+          <h1>Blogs</h1>
+        </div>
+      </nav>
+      <!-- Heading -->
+      <header class="headerContainer">
+        <div><img src="img/blogger_B.png" /></div>
+        <div>
+          <h1>FreeDom of Speech</h1>
+          <input type="text" placeholder="بول کے تیرے لب آذاد ہیں" />
+        </div>
+      </header>
+      <main>
+        <div id="editor"></div>
+      </main>
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
