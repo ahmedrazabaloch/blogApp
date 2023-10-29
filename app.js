@@ -13,3 +13,8 @@ var quill = new Quill("#editor", {
   },
   theme: "snow",
 });
+
+$("#saveDelta").click(function () {
+  window.delta = quill.contents();
+  console.log(window.delta);
+});
