@@ -1,14 +1,15 @@
+var editToolBar = [
+  ["bold", "italic", "underline", "strike"],
+  [{ header: 1 }, { header: 2 }],
+  [{ color: ["#05386b", false] }, { background: [] }],
+  ["blockquote", "code-block"],
+  [{ align: [] }],
+  ["image"],
+];
+
 var quill = new Quill("#editor", {
+  modules: {
+    toolbar: editToolBar,
+  },
   theme: "snow",
 });
-quill.format("color", "var(--secondaryColor)");
-
-var delta = quill.getContents();
-
-// var text = quill.getText();
-// var textValue = textValue.textValue ;
-var text = quill.getText().String;
-
-// setInterval(() => {
-//   console.log(text);
-// }, 1000);
