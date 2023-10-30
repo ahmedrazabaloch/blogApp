@@ -92,9 +92,22 @@ body {
 /* Text Editor */
 .editorContainer {
   width: 80%;
+  height: 400px;
   background-color: var(--fontsColor);
+  margin: 10px auto;
+  border-radius: 10px;
 }
-
+.ql-container.ql-snow {
+  border: none;
+}
+.ql-toolbar.ql-snow {
+border: none;
+}
+.ql-editor.ql-blank::before{
+  font-style: normal;
+  font-size: large;
+  color: var(--secondaryColor);
+}
 #publishBtn {
   padding: 10px;
   width: 100px;
@@ -108,6 +121,8 @@ body {
   letter-spacing: 2px;
   transition: all 0.5s linear;
   border: 1px solid var(--primaryColor);
+  display: flex;
+  justify-content: center;
 }
 #publishBtn:hover {
   background-color: var(--primaryColor);
