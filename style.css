@@ -53,6 +53,16 @@ body {
   width: 200px;
   height: 200px;
 }
+.inputClass {
+  position: relative;
+}
+.inputClass img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 4px;
+  bottom: 4px;
+}
 .headerContainer h1 {
   color: var(--secondaryColor);
   font-size: 3em;
@@ -76,6 +86,16 @@ body {
 
 /* Text Editor */
 .editorContainer {
-  width: 50%;
+  width: 40%;
   background-color: var(--fontsColor);
+}
+
+#saveDelta{
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondaryColor);
+  margin: 10px auto;
+  color: var(--fontsColor);
 }
