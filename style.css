@@ -21,7 +21,7 @@ body {
 }
 
 .cotainer {
-  width: 1360px;
+  width: 1340px;
   margin: 0 auto;
   padding: 40px 50px;
   height: auto;
@@ -41,17 +41,20 @@ body {
   font-weight: 600;
 }
 
+/* <!-- Heading --> */
+
 .headerContainer {
   display: flex;
   margin: 50px 0;
-  height: 400px;
+  height: 450px;
+  justify-content: space-between;
 }
 .leftSection {
   display: flex;
   gap: 50px;
   align-items: center;
 }
-.headerContainer img {
+.leftSection img {
   width: 200px;
   height: 200px;
 }
@@ -65,11 +68,11 @@ body {
   left: 4px;
   bottom: 4px;
 }
-.headerContainer h1 {
+.leftSection h1 {
   color: var(--secondaryColor);
   font-size: 3em;
 }
-.headerContainer input {
+.leftSection input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -79,7 +82,7 @@ body {
   margin-top: 20px;
   color: var(--secondaryColor);
 }
-.headerContainer input[type="Text"]::placeholder {
+.leftSection input[type="Text"]::placeholder {
   font-family: "urdu";
   color: var(--secondaryColor);
   text-align: right;
@@ -88,7 +91,7 @@ body {
 
 /* Text Editor */
 .editorContainer {
-  width: 40%;
+  width: 80%;
   background-color: var(--fontsColor);
 }
 
@@ -103,10 +106,34 @@ body {
   cursor: pointer;
   font-weight: 600;
   letter-spacing: 2px;
-  transition: ease 0.3s;
+  transition: all 0.5s linear;
+  border: 1px solid var(--primaryColor);
 }
 #publishBtn:hover {
   background-color: var(--primaryColor);
   border: 1px solid var(--secondaryColor);
   color: var(--secondaryColor);
+}
+
+.rightSection {
+  width: 35%;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 1px solid var(--secondaryColor); */
+  /* box-shadow: inset 0px 0px 22px 0px rgba(5, 56, 107, 1); */
+  box-shadow: 0px 0px 22px 0px rgba(5, 56, 107, 1);
+  user-select: none;
+}
+
+.imgBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+.quote {
+  padding: 10px;
+  color: var(--secondaryColor);
+}
+.quote p {
+  margin-top: 10px;
+  text-align: justify;
 }
