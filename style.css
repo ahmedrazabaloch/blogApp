@@ -45,8 +45,8 @@ body {
 
 .headerContainer {
   display: flex;
-  margin: 10px 0 50px;
-  height: 450px;
+  margin: 0 0 50px;
+  height: auto;
   justify-content: space-between;
 }
 .leftSection {
@@ -98,6 +98,10 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 30px -18px rgba(5, 56, 107, 1);
   overflow: hidden;
+  padding-top: 10px;
+}
+.ql-container {
+  height: auto !important;
 }
 .ql-container.ql-snow {
   border: none;
@@ -108,7 +112,6 @@ body {
 .ql-editor.ql-blank::before {
   font-style: normal;
   font-size: large;
-  color: var(--secondaryColor);
 }
 #publishBtn {
   padding: 15px 10px;
@@ -158,8 +161,10 @@ body {
 
 #postContainer {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
   margin: 50px auto;
+  gap: 45px;
 }
 
 #postContainer .rightSection {

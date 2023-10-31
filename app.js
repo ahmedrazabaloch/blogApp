@@ -24,7 +24,7 @@ function publish() {
   var getItem = localStorage.getItem("textValue");
   var postContainer = document.getElementById("postContainer");
 
-  postContainer.innerHTML = `
+  postContainer.innerHTML += `
   <div class="rightSection">
   <div class="rightbox">
     <div class="imgBox">
