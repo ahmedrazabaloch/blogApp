@@ -91,8 +91,10 @@ body {
 
 /* Text Editor */
 .editorContainer {
+  /* position: relative; */
   width: 80%;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   background-color: var(--fontsColor);
   margin: 10px auto;
   border-radius: 10px;
@@ -139,8 +141,6 @@ body {
   width: 35%;
   padding: 20px;
   border-radius: 10px;
-  /* border: 1px solid var(--secondaryColor); */
-  /* box-shadow: inset 0px 0px 22px 0px rgba(5, 56, 107, 1); */
   box-shadow: 0px 0px 22px 0px rgba(5, 56, 107, 1);
   user-select: none;
 }
@@ -153,6 +153,7 @@ body {
   padding: 10px;
   color: var(--secondaryColor);
   text-align: center;
+  word-wrap: break-word;
 }
 .quote p {
   margin-top: 10px;
@@ -170,3 +171,22 @@ body {
 #postContainer .rightSection {
   width: 25%;
 }
+
+.form-outline {
+  position: relative;
+}
+
+.postImg #postImg {
+  display: none;
+}
+.postImg #imgLable {
+  position: absolute;
+  top: 43px;
+  right: 38%;
+  cursor: pointer;
+}
+.postImg #imgLable img {
+  object-fit: contain;
+  cursor: no-drop;
+}
+  

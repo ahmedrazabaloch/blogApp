@@ -6,7 +6,6 @@ var editToolBar = [
   [{ direction: "rtl" }],
   ["blockquote", "code-block"],
   [{ align: [] }],
-  ["image"],
   ["clean"],
 ];
 
@@ -18,21 +17,28 @@ var quill = new Quill("#editor", {
   theme: "snow",
 });
 
-function publish() {
-  var qullvalue = quill.getText();
-  localStorage.setItem("textValue", qullvalue);
-  var getItem = localStorage.getItem("textValue");
-  var postContainer = document.getElementById("postContainer");
+// var img = document.querySelector("input[type=file]");
+// var file = event.target.file[0];
+// var url = window.URL.createObjectURL(file);
 
+function publish() {
+  var postTitle = document.getElementById("form12").value;
+  var qullvalue = quill.root.innerHTML;
+  localStorage.setItem("title", postTitle);
+  localStorage.setItem("postTaxt", qullvalue);
+  var getText = localStorage.getItem("postTaxt");
+  var getTitle = localStorage.getItem("title");
+
+  var postContainer = document.getElementById("postContainer");
   postContainer.innerHTML += `
   <div class="rightSection">
   <div class="rightbox">
     <div class="imgBox">
-      <img src="" />
+      <img src="img/codeImg.png" />
     </div>
     <div class="quote">
-      <h2>Getting text from backend</h2>
-      <p>${getItem}</p>
+      <h2>${getTitle}</h2>
+      <p>${getText}</p>
     </div>
   </div>
   </div>
