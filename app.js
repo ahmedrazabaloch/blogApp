@@ -18,9 +18,24 @@ var quill = new Quill("#editor", {
   theme: "snow",
 });
 
-var customButton = document.querySelector("#custom-button");
-customButton.addEventListener("click", function () {
-  console.log("Clicked!");
-});
+function publish() {
+  var qullvalue = quill.getText();
+  localStorage.setItem("textValue", qullvalue);
+  var getItem = localStorage.getItem("textValue");
+  var postContainer = document.getElementById("postContainer");
 
-// console.log(quill.getText());
+  postContainer.innerHTML = `
+  <div class="rightSection">
+  <div class="rightbox">
+    <div class="imgBox">
+      <img src="" />
+    </div>
+    <div class="quote">
+      <h2>Getting text from backend</h2>
+      <p>${getItem}</p>
+    </div>
+  </div>
+  </div>
+
+  `;
+}
