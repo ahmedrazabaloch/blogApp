@@ -11,6 +11,8 @@
       href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
       rel="stylesheet"
     />
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Blog App by Ar</title>
   </head>
@@ -56,9 +58,14 @@
         <div class="form-outline">
           <input type="text" id="form12" class="form-control" />
           <label class="form-label" for="form12">Post Title:</label>
-          <div class="postImg"> 
+          <div class="postImg">
             <input type="file" accept="image/*" id="postImg" />
-            <label for="postImg" id="imgLable"><img src="img/image.png" id="selectImg" title="Under Development"></label>
+            <label for="postImg" id="imgLable"
+              ><img
+                src="img/image.png"
+                id="selectImg"
+                title="Under Development"
+            /></label>
           </div>
         </div>
         <div id="editor"></div>
@@ -68,6 +75,7 @@
       <div id="postContainer"></div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="app.js"></script>
     <script src="registration.js"></script>

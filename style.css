@@ -253,3 +253,24 @@ input#checkbox {
   flex-direction: row-reverse;
   align-items: center;
 }
+
+/* sweetalert  */
+
+.swal2-popup.swal2-toast .swal2-styled {
+  width: 40%;
+  margin: 0 auto;
+  background-color: var(--secondaryColor);
+}
+.swal2-popup.swal2-toast .swal2-actions {
+  justify-content: center !important;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+  text-align: center !important;
+}
+.swal2-popup.swal2-toast {
+  height: fit-content !important;
+}
+body.swal2-toast-shown .swal2-container {
+  width: fit-content !important;
+}
