@@ -198,8 +198,8 @@ body {
   color: var(--secondaryColor);
 }
 .title {
-  font-size: 1em;
-  padding-left: 13%;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .singUpContainer {
@@ -212,7 +212,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 30%;
+  width: 27%;
 }
 .signUp label {
   position: relative;
@@ -220,22 +220,19 @@ body {
 .signUp label img {
   width: 27px;
   position: absolute;
-  top: 26px;
+  top: 18px;
 }
 .signUp input {
-  padding: 10px 35px;
+  padding: 5px 35px;
   border: none;
   border-bottom: 2px solid var(--secondaryColor);
   background-color: transparent;
   outline: none;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .signUp input::placeholder {
   color: var(--secondaryColor);
   opacity: 0.5;
-}
-.signUp div {
-  user-select: none;
 }
 .signUpImg img {
   object-fit: contain;
@@ -255,9 +252,4 @@ input#checkbox {
 .singUpContainer#logIn {
   flex-direction: row-reverse;
   align-items: center;
-}
-
-#logInH1 {
-  text-align: right;
-  margin-right: 25%;
 }

@@ -17,9 +17,11 @@ var quill = new Quill("#editor", {
   theme: "snow",
 });
 
-// var img = document.querySelector("input[type=file]");
-// var file = event.target.file[0];
-// var url = window.URL.createObjectURL(file);
+// SingUp page
+
+
+
+// Post Rendering
 
 function publish() {
   var postTitle = document.getElementById("form12").value;
