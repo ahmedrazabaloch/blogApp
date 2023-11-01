@@ -17,8 +17,6 @@ var quill = new Quill("#editor", {
   theme: "snow",
 });
 
-// SingUp page
-
 
 
 // Post Rendering

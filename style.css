@@ -118,7 +118,7 @@ body {
   font-style: normal;
   font-size: large;
 }
-#publishBtn {
+.publishBtn {
   padding: 15px 10px;
   width: 180px;
   border-radius: 5px;
@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: center;
 }
-#publishBtn:hover {
+.publishBtn:hover {
   background-color: var(--primaryColor);
   border: 1px solid var(--secondaryColor);
   color: var(--secondaryColor);
