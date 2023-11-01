@@ -4,6 +4,9 @@
   font-family: "urdu";
   src: url(urduFonts/Attari_Font.ttf);
 }
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
 
 * {
   margin: 0;
@@ -23,7 +26,7 @@ body {
 .cotainer {
   width: 1340px;
   margin: 0 auto;
-  padding: 40px 50px;
+  padding: 40px 50px 0;
   height: auto;
 }
 .navContainer > div {
@@ -189,4 +192,64 @@ body {
   object-fit: contain;
   cursor: no-drop;
 }
-  
+
+/* Sign Up */
+.cotainer {
+  color: var(--secondaryColor);
+}
+.title {
+  font-size: 1.5em;
+  padding-left: 13%;
+}
+
+.singUpContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-top: 35px;
+}
+.signUp {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 30%;
+}
+.signUp label {
+  position: relative;
+}
+.signUp label img {
+  width: 27px;
+  position: absolute;
+  top: 26px;
+}
+.signUp input {
+  padding: 10px 35px;
+  border: none;
+  border-bottom: 2px solid var(--secondaryColor);
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5em;
+}
+.signUp input::placeholder {
+  color: var(--secondaryColor);
+  opacity: 0.5;
+}
+.signUp div {
+  user-select: none;
+}
+.signUpImg {
+  width: 30%;
+  text-align: center;
+}
+
+.signUpImg img {
+  width: 300px;
+}
+.signUpImg p {
+  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 90px;
+}
