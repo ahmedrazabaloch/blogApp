@@ -198,7 +198,7 @@ body {
   color: var(--secondaryColor);
 }
 .title {
-  font-size: 1.5em;
+  font-size: 1em;
   padding-left: 13%;
 }
 
@@ -206,7 +206,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding-top: 35px;
+  padding-top: 5px;
 }
 .signUp {
   display: flex;
@@ -237,19 +237,27 @@ body {
 .signUp div {
   user-select: none;
 }
-.signUpImg {
-  width: 30%;
-  text-align: center;
-}
-
 .signUpImg img {
-  width: 300px;
+  object-fit: contain;
 }
-.signUpImg p {
+p {
   text-decoration: underline;
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
   user-select: none;
-  margin-top: 90px;
+  text-align: center;
+}
+input#checkbox {
+  margin: 0 20px 0 10px;
+}
+
+.singUpContainer#logIn {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#logInH1 {
+  text-align: right;
+  margin-right: 25%;
 }
