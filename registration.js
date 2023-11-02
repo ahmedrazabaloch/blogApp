@@ -197,3 +197,7 @@ function userLogIn() {
     }, 2000);
   }
 }
+
+function singUpPage() {
+  location.href = "signup.html";
+}
