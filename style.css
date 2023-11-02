@@ -237,7 +237,7 @@ body {
 .signUpImg img {
   object-fit: contain;
 }
-p {
+.signUp p {
   text-decoration: underline;
   font-weight: 600;
   letter-spacing: 1px;

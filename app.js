@@ -17,10 +17,7 @@ var quill = new Quill("#editor", {
   theme: "snow",
 });
 
-
-
 // Post Rendering
-
 function publish() {
   var postTitle = document.getElementById("form12").value;
   var qullvalue = quill.root.innerHTML;
@@ -45,3 +42,4 @@ function publish() {
 
   `;
 }
+publish();
